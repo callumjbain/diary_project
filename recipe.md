@@ -32,3 +32,42 @@ I want to see an estimate of reading time for a text, assuming that I can read 2
 # 4. Impliment Their Behaviour 
     See file named... 
 -->
+
+
+<!-- Exercise Two
+
+ 1.Descibe the problem
+    As a user
+    So that I can improve my grammar
+    I want to verify that a text starts with a capital letter and ends with a suitable sentence-ending punctuation mark.
+
+ 
+ 2. Design the Function Signature
+    def is_grammar_correct(str)
+
+    Parameters - String
+
+    Returns - "Your grammar is correct" if letter is capitalised and full stop is at end. OR "Your grammar in incorrect" if these are not the case.
+
+    Side effects - prints out result statement
+ 
+ 3. Create Examples as Tests
+
+    Give sentnce with correct grammar. "This sentence is correct."
+    Returns "Your grammar is correct"
+    is_grammar_correct('string') => "Your grammar is correct"
+
+    Give sentnce with incorrect grammar. "This sentence is incorrect."
+    Returns "Your grammar is incorrect"
+    is_grammar_correct('string') => "Your grammar is incorrect"
+
+    Don't give any input.
+    Returns "No input given"
+    is_grammar_correct(None) => "No input given."
+ 
+ 4. Impliment Their Behaviour 
+ 
+ 
+ 
+ 
+ -->
