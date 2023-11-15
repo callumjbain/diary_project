@@ -55,11 +55,15 @@ I want to see an estimate of reading time for a text, assuming that I can read 2
 
     Give sentnce with correct grammar. "This sentence is correct."
     Returns "Your grammar is correct"
-    is_grammar_correct('string') => "Your grammar is correct"
+    is_grammar_correct('string') => "Your grammar is correct."
 
-    Give sentnce with incorrect grammar. "This sentence is incorrect."
-    Returns "Your grammar is incorrect"
-    is_grammar_correct('string') => "Your grammar is incorrect"
+    Give sentnce with No capital letter. "this sentence has no capital letter."
+    Returns "This needs a capital letter."
+    is_grammar_correct('string') => "This needs a capital letter."
+
+    Give sentnce with no full stop. "This sentence has no full stop"
+    Returns "This needs a full stop."
+    is_grammar_correct('string') => "This needs a full stop."
 
     Don't give any input.
     Returns "No input given"
