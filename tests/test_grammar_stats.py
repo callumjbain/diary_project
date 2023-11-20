@@ -12,11 +12,22 @@ def test_letter_is_capitalized():
     result = grammar_stats.check("This text has a capital letter")
     assert result == False
 
-def test_percentage_of_true():
+def test_percentage_of_false():
     grammar_stats = GrammarStats()
+    grammar_stats.check("This text has a capital letter")
     grammar_stats.check("This text has a capital letter.")
     grammar_stats.check("This text has a capital letter and a full stop.")
     grammar_stats.check("This text has a capital letter and a full stop and is longer.")
     result = grammar_stats.percentage_good()
 
-    assert result == 100
+    assert result == 75
+
+def test_percentage_of_true():
+    grammar_stats = GrammarStats()
+    grammar_stats.check("This text has a capital letter")
+    grammar_stats.check("This text has a capital letter")
+    grammar_stats.check("This text has a capital letter and a full stop.")
+    grammar_stats.check("This text has a capital letter and a full stop and is longer.")
+    result = grammar_stats.percentage_good()
+
+    assert result == 50
